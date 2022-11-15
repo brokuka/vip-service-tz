@@ -1,0 +1,80 @@
+:root {
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	--container-max-width: 962px;
+	--container-padding: 1.6rem;
+
+	--primary: #5C87DB;
+	--primary-hover: #3E67B7;
+	--primary-dark: #8BA5D8;
+	--black: #232323;
+	--gray-01: #B7BAC1;
+	--gray-02: #5C5C5C;
+	--gray-03: #C4C4C4;
+	--gray-04: #DDE3EE;
+
+	--bg-primary: #E5E5E5;
+
+	--shadow-01: 0px 0px 14px rgba(112, 121, 153, 0.3);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+button:not(:disabled) {
+	cursor: pointer;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+
+	font-size: 1rem;
+	color: var(--text-black);
+}
+
+.container {
+	max-width: var(--container-max-width);
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 calc(var(--container-padding) * 2);
+}
+
+.info {
+	display: flex;
+	box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+	border-radius: 15px;
+}
+
+.card-group {
+	display: flex;
+	flex-direction: column;
+
+	&> :not(:first-child)::after {
+		content: "";
+		display: block;
+		width: 617px;
+
+		position: absolute;
+		top: 0;
+		left: 130px;
+
+		border-top: 1px var(--primary) dashed;
+	}
+}

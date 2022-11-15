@@ -1,0 +1,29 @@
+.root {
+	margin: 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-inline: 3.27rem;
+
+	font-family: inherit;
+	font-size: 14px;
+	color: white;
+	line-height: 140%;
+
+	background: var(--primary);
+	border: none;
+	border-radius: 1rem;
+
+	&:hover:not(:disabled) {
+		background: var(--primary-hover);
+	}
+
+	&:active {
+		box-shadow: 0px 4px 4px rgba(92, 135, 219, 0.15);
+		background: var(--primary);
+		color: rgba(white, 0.5);
+	}
+
+	&:disabled {
+		background: var(--gray-01);
+	}
+}

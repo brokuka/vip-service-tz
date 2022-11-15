@@ -1,0 +1,14 @@
+.root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: auto;
+
+	font-size: 3.2rem;
+	color: var(--black);
+	font-weight: 700;
+	line-height: 3.8rem;
+	text-align: center;
+
+	border-left: 1px solid var(--gray-04);
+}

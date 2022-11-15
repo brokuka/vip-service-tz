@@ -1,0 +1,78 @@
+.root {
+	box-shadow: var(--shadow-01);
+	background: white;
+	border-radius: 15px;
+}
+
+.header {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr;
+	gap: 2.5rem;
+
+	padding-top: 1.7rem;
+	padding-bottom: 3rem;
+	padding-inline: 3rem;
+
+	background: var(--primary);
+	border-radius: 15px 15px 0 0;
+}
+
+.footer {
+	padding: 23px 29px;
+
+	text-align: end;
+}
+
+.group {
+	display: flex;
+	padding-top: 3px;
+
+	> :first-child:not(:last-child) {
+		position: relative;
+		padding-right: 20px;
+
+		&::after {
+			content: "";
+			width: 19px;
+
+			position: absolute;
+			bottom: 18px;
+			right: 0;
+
+			border-bottom: 1px dashed white;
+			;
+		}
+	}
+}
+
+.link {
+	margin: 0;
+	padding-top: 1.15rem;
+	padding-bottom: 1.15rem;
+	padding-inline: 3.27rem;
+
+	font-family: inherit;
+	font-size: 14px;
+	color: white;
+	line-height: 140%;
+	text-decoration: none;
+
+	background: var(--primary);
+	border: none;
+	border-radius: 1rem;
+
+	&:hover:not(:disabled) {
+		background: var(--primary-hover);
+	}
+
+	&:active {
+		box-shadow: 0px 4px 4px rgba(92, 135, 219, 0.15);
+		background: var(--primary);
+		color: rgba(white, 0.5);
+	}
+
+	&:disabled {
+		background: var(--gray-01);
+	}
+}
