@@ -10,7 +10,6 @@ type InputProps = {
 
 const InputText = React.forwardRef<HTMLInputElement, InputProps>(
   ({ icon = false, ...props }, ref) => {
-    // return <input className={styles.root} ref={ref} {...props} />;
     return (
       <div className={styles.wrapper}>
         {icon && (

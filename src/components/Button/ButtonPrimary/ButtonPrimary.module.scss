@@ -17,7 +17,7 @@
 		background: var(--primary-hover);
 	}
 
-	&:active {
+	&:active:not(:disabled) {
 		box-shadow: 0px 4px 4px rgba(92, 135, 219, 0.15);
 		background: var(--primary);
 		color: rgba(white, 0.5);

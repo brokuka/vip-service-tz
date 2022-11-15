@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import AviaPage from "./pages/avia";
-import InfoPage from "./pages/avia/info";
+import InfoPage from "./pages/info";
 
 function App() {
   return (
