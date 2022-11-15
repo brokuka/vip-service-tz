@@ -1,4 +1,4 @@
-import Search from "../components/Search";
+import Search from "../../components/Search";
 
 const AviaPage: React.FC = (): JSX.Element => {
   return (
